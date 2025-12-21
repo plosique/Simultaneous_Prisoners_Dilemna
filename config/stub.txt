@@ -1,0 +1,25 @@
+INPUT
+myId: your player ID
+OUTPUT
+
+read myId:int
+INPUT
+initialOpponentCount: initial number of opponents
+OUTPUT
+
+read initialOpponentCount:int
+
+gameloop
+  INPUT
+  opponentCount: number of active opponents this turn
+  OUTPUT
+
+  read opponentCount:int
+  INPUT
+  opponentId: ID of the opponent
+  move: C (cooperate), D (defect), or N (no previous move on first turn)
+  OUTPUT
+  opponent_id move: output C or D for each opponent
+
+  loop opponentCount read opponentId:int move:word(1)
+  loop opponentCount write opponentId C

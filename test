@@ -1,0 +1,934 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mcom.codingame.com:skeleton[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding skeleton 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.1.0:java[m [1m(default-cli)[m @ [36mskeleton[0;1m ---[m
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Init
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 1
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 0
+{"global":{"entitymodule":{"width":1920,"height":1080}},"frame":{"entitymodule":""}}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 4]
+0
+1
+1
+1 N
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 1 X
+
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 1]
+INTERMEDIATE_FRAME 1
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 4]
+1
+1
+1
+0 N
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 0 D
+
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 2
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 2
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 3
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 3
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 4
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 4
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 5
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 5
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 6
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 6
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 7
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 7
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 8
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 8
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 9
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 9
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 10
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 10
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 11
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 11
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 12
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 12
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 13
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 13
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 14
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 14
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 15
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 15
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 16
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 16
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 17
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 17
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 18
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 18
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 19
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 19
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 20
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 20
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 21
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 21
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 22
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 22
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 23
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 23
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 24
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 24
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 25
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 25
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 26
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 26
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 27
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 27
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 28
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 28
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 29
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 29
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 30
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 30
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 31
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 31
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 32
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 32
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 33
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 33
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 34
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 34
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 35
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 35
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 36
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 36
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 37
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 37
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 38
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 38
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 39
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 39
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 40
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 40
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 41
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 41
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 42
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 42
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 43
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 43
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 44
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 44
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 45
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 45
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 46
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 46
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 47
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 47
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 48
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 48
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 49
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 49
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 50
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 50
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 51
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 51
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 52
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 52
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 53
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 53
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 54
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 54
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 55
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 55
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 56
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 56
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 57
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 57
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 58
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 58
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 59
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 59
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 60
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 60
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 61
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 61
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 62
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 62
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 63
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 63
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 64
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 64
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 65
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 65
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 66
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 66
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 67
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 67
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 68
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 68
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 69
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 69
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 70
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 70
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 71
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 71
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 72
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 72
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 73
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 73
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 74
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 74
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 75
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 75
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 76
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 76
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 77
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 77
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 78
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 78
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 79
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 79
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 80
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 80
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 81
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 81
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 82
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 82
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 83
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 83
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 84
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 84
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 85
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 85
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 86
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 86
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 87
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 87
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 88
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 88
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 89
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 89
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 90
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 90
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 91
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 91
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 92
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 92
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 93
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 93
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 94
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 94
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 95
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 95
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 96
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 96
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 97
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 97
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 98
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 98
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 99
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 99
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - Turn 100
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 100
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[NEXT_PLAYER_INPUT] 1]
+0
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== Read from player
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 
+[2025/12/14 09:48:35][GF] INFO  : GameRunner - 	=== End Player
+[2025/12/14 09:48:35][GF] INFO  : GameManager - End
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[VIEW] 2]
+KEY_FRAME 101
+{"entitymodule":""}
+[2025/12/14 09:48:35][GF] INFO  : GameManager - [[UINPUT] 1]
+[2025/12/14 09:48:35][GF] INFO  : GameManager - seed=1121063131376839386
+Directory src/main/resources/view/assets not found.
+http://localhost:8888/test.html
+Exposed web server dir: /tmp/codingame
+[2025/12/14 09:48:35][GF] INFO  : xnio - XNIO version 3.3.8.Final
+[2025/12/14 09:48:35][GF] INFO  : nio - XNIO NIO Implementation Version 3.3.8.Final
