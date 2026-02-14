@@ -9,8 +9,14 @@ public class LocalTestMain {
         MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
 
         // Add test agents
-        gameRunner.addAgent(Agent1.class);
-        gameRunner.addAgent(Agent2.class);
+        gameRunner.addAgent(AlwaysCooperate.class, "AlwaysCooperate");
+        gameRunner.addAgent(AlwaysDefect.class, "AlwaysDefect");
+        gameRunner.addAgent(TitForTat.class, "TitForTat");
+        gameRunner.addAgent(RandomStrategy.class, "RandomStrategy");
+        gameRunner.addAgent(Grudger.class, "Grudger");
+        gameRunner.addAgent(Pavlov.class, "Pavlov");
+        gameRunner.addAgent(TitForTwoTats.class, "TitForTwoTats");
+        gameRunner.addAgent(SuspiciousTitForTat.class, "SuspiciousTitForTat");
 
         // Start with web server for visualization
         gameRunner.start(8888);

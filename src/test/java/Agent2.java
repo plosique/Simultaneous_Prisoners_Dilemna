@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 /**
- * Agent2: Always Steal Strategy
- * This agent always plays S (steal) against all opponents.
+ * Agent2: Always Defect Strategy
+ * This agent always plays D (defect) against all opponents.
  */
 public class Agent2 {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Agent2 {
             // Read number of active opponents this turn
             int opponentCount = Integer.parseInt(scanner.nextLine());
             // Read opponent moves (always opponentCount lines: "opponent_id move")
-            // Move is H, S, or N (N = no previous move on first turn)
+            // Move is C, D, or N (N = no previous move on first turn)
             List<Integer> opponentIds = new ArrayList<>();
             for (int i = 0; i < opponentCount; i++) {
                 String line = scanner.nextLine();
@@ -25,9 +25,9 @@ public class Agent2 {
                 // char move = parts[1].charAt(0); // 'H', 'S', or 'N'
                 opponentIds.add(opponentId);
             }
-            // Output: Steal against all opponents
+            // Output: Defect against all opponents
             for (int opponentId : opponentIds) {
-                System.out.println(opponentId + " S");
+                System.out.println(opponentId + " D");
             }
         }
     }

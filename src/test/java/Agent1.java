@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Agent1: Always Heal Strategy
- * This agent always plays H (heal) against all opponents.
+ * Agent1: Always Cooperate Strategy
+ * This agent always plays C (cooperate) against all opponents.
  */
 public class Agent1 {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Agent1 {
             // Read number of active opponents this turn
             int opponentCount = Integer.parseInt(scanner.nextLine());
             // Read opponent moves (always opponentCount lines: "opponent_id move")
-            // Move is H, S, or N (N = no previous move on first turn)
+            // Move is C, D, or N (N = no previous move on first turn)
             List<Integer> opponentIds = new ArrayList<>();
             for (int i = 0; i < opponentCount; i++) {
                 String line = scanner.nextLine();
@@ -26,9 +26,9 @@ public class Agent1 {
                 // char move = parts[1].charAt(0); // 'H', 'S', or 'N'
                 opponentIds.add(opponentId);
             }
-            // Output: Heal all opponents
+            // Output: Cooperate with all opponents
             for (int opponentId : opponentIds) {
-                System.out.println(opponentId + " H");
+                System.out.println(opponentId + " C");
             }
         }
     }

@@ -99,8 +99,8 @@ public class Player extends AbstractMultiplayerPlayer {
 
                 // Validate move character
                 String moveStr = tokens[1];
-                if (moveStr.length() != 1 || (moveStr.charAt(0) != 'H' && moveStr.charAt(0) != 'S')) {
-                    throw new InvalidAction(String.format("Invalid move '%s' (must be H or S)",
+                if (moveStr.length() != 1 || (moveStr.charAt(0) != 'C' && moveStr.charAt(0) != 'D')) {
+                    throw new InvalidAction(String.format("Invalid move '%s' (must be C or D)",
                             moveStr));
                 }
 
