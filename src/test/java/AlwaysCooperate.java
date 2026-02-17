@@ -14,7 +14,7 @@ public class AlwaysCooperate {
                 opponentIds.add(Integer.parseInt(parts[0]));
             }
             for (int id : opponentIds) {
-                System.out.println(id + " C");
+                System.out.println(id);
             }
         }
     }

@@ -7,10 +7,14 @@
       <span>The Goal</span>
     </h1>
     <div class="statement-goal-content">
-      Win the Iterated Prisoner's Dilemma tournament by achieving the highest total score after 100 turns.
+      Score the most points by defecting or cooperating in matches of up to 8 people. This is an implementation of 
+      <a href="Axelrod"> Axelrods tournaments</a>. 
       <br><br>
-      Each turn, you must decide whether to <strong>cooperate (C)</strong> or <strong>defect (D)</strong> against each active opponent.
-    </div>
+      Each round occurs independently. Each round you must decide whether to 
+      <strong>cooperate (C)</strong> or <strong>defect (D)</strong> against each active opponent. 
+      The pairwise interaction is scored and added to your current score. 
+      Outside of the first turn you will see how opponents treated you last round (whether they cooperated or defected against you) for reference.
+      </div>
   </div>
   <!-- RULES -->
   <div class="statement-section statement-rules">
@@ -22,55 +26,34 @@
       <div class="statement-rules-content">
         <strong>Game Setup:</strong>
         <ul>
-          <li>The game is played over <strong>100 turns</strong></li>
+          <li>The game is played over <strong>60 turns</strong></li>
           <li>Multiple players compete simultaneously</li>
-          <li>Each player interacts with every other active player each turn</li>
         </ul>
         <br>
         <strong>Scoring (per pairwise interaction):</strong>
         <ul>
-          <li><strong>Both cooperate (C vs C):</strong> 4 points each</li>
-          <li><strong>Both defect (D vs D):</strong> 1 point each</li>
-          <li><strong>Defector vs Cooperator (D vs C):</strong> 7 points for defector, 0 points for cooperator</li>
+          <li><strong>Both cooperate (<const>C</const> vs <const>C</const>):</strong> 4 points each</li>
+          <li><strong>Both defect (<const>D</const> vs <const>D</const>):</strong> 1 point each</li>
+          <li><strong>Defector vs Cooperator (<const>D</const> vs <const>C</const>):</strong> 7 points for defector, 0 points for cooperator</li>
         </ul>
-        Your score each turn is the sum of payoffs against all active opponents.
+        Your score per turn is the sum of payoffs against all active opponents. 
         <br><br>
-        <strong>Elimination:</strong><br>
+        <strong>Defeat conditions:</strong><br>
         You are <strong>eliminated</strong> if you:
         <ul>
           <li>Output the wrong number of lines (must equal number of active opponents)</li>
           <li>Use invalid format (each line must be "opponent_id move")</li>
-          <li>Reference non-existent or eliminated players</li>
-          <li>Try to play against yourself</li>
+          <li>Reference yourself, non-existent, or eliminated players</li>
           <li>Include duplicate opponent IDs</li>
-          <li>Use invalid moves (anything other than 'C' or 'D')</li>
+          <li>Use invalid moves (anything other than <const>C</const> or <const>D</const>)</li>
           <li>Timeout</li>
         </ul>
         Eliminated players no longer participate and are removed from opponent lists.
       </div>
     </div>
   </div>
-  <!-- EXPERT RULES -->
-  <div class="statement-section statement-expertrules">
-    <h1>
-      <span class="icon icon-expertrules">&nbsp;</span>
-      <span>Strategy Tips</span>
-    </h1>
-    <div class="statement-expert-rules-content">
-      <strong>Classic Strategies:</strong>
-      <ul>
-        <li><strong>Tit-for-Tat:</strong> Cooperate first, then copy opponent's previous move</li>
-        <li><strong>Always Cooperate:</strong> Always play C (vulnerable to defectors)</li>
-        <li><strong>Always Defect:</strong> Always play D (often wins short-term)</li>
-        <li><strong>Grudger:</strong> Cooperate until opponent defects, then always defect</li>
-        <li><strong>Pavlov:</strong> Repeat if you scored well, switch if you scored poorly</li>
-      </ul>
-      <br>
-      Remember: you play against <strong>all</strong> opponents simultaneously each turn!
-    </div>
-  </div>
   <!-- EXAMPLES -->
-  <div class="statement-section statement-examples">
+  <div class="statement-section statement-protocol">
     <h1>
       <span class="icon icon-example">&nbsp;</span>
       <span>Example</span>
@@ -78,26 +61,27 @@
 
     <div class="statement-examples-text">
       <strong> Initial Input: </strong>
-      <pre>0 
-2</pre>
+      <pre><const>0 2</const></pre>
+       <p>
       <strong>Turn 1 Input (3 players total):</strong>
+      </p>
       <pre>
-1 N
-2 N</pre>
+<const>1 N</const>
+<const>2 N</const></pre>
       You are Player 0. Players 1 and 2 have no previous moves (first turn).
       <br><br>
       <strong>Turn 1 Output:</strong>
-      <pre>1 C
-2 C</pre>
+      <pre><const>1 C</const>
+<const>2 C</const></pre>
       You cooperate with both opponents.
       <br><br>
       <strong>Turn 2 Input:</strong>
-      <pre>2
-1 C
-2 D</pre>
+      <pre><const>2</const>
+<const>1 C</const>
+<const>2 D</const></pre>
       Player 1 cooperated with you, Player 2 defected.
       <br><br>
-      <strong>Scoring:</strong> If you played C against both, you earned 4 points (vs Player 1) + 0 points (vs Player 2) = 4 points that turn.
+      <strong>Scoring:</strong> If you played <const>C</const> against both, you earned 4 points (vs Player 1) + 0 points (vs Player 2) = 4 points that turn.
     </div>
 
   </div>
@@ -131,7 +115,7 @@
         <span class="statement-lineno"><var>opponentCount</var> lines</span>, one per active opponent, each containing two space-separated values:
         <ul>
           <li><var>opponentId</var>: the opponent's ID</li>
-          <li><var>move</var>: your move against them - <const>'C'</const> (cooperate) or <const>'D'</const> (defect)</li>
+          <li><var>move</var>: your move against them - <const>C</const> (cooperate) or <const>D</const> (defect)</li>
         </ul>
         <br>
       </div>
@@ -141,8 +125,8 @@
     <div class="blk">
       <div class="title">Constraints</div>
       <div class="text">
-        2 ≤ <var>players</var> ≤ 4<br>
-        <var>turns</var> = 100<br>
+        2 ≤ <var>players</var> ≤ 8<br>
+        <var>maximum number of turns</var> = 60<br>
         Allotted response time per turn is ≤ <const>100</const> milliseconds.
       </div>
     </div>

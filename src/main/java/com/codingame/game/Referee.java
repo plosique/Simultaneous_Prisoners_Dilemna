@@ -214,8 +214,9 @@ public class Referee extends AbstractReferee {
 
     public void step_draw(int turn) {
         List<Player> activePlayers = gameManager.getActivePlayers();
+        List<Player> allPlayers = gameManager.getPlayers();
         updateGraph(activePlayers, turn);
-        updateLeaderboard(activePlayers);
+        updateLeaderboard(allPlayers);
     }
 
     private void updateGraph(List<Player> activePlayers, int turn) {
@@ -293,13 +294,20 @@ public class Referee extends AbstractReferee {
                 gameManager.addToGameSummary(gameManager.formatErrorMessage(player.getNicknameToken() + " timeout!"));
                 player.deactivate(player.getNicknameToken() + " timeout!");
                 player.setScore(-1);
-                endGame();
             } catch (InvalidAction e) {
                 gameManager.addToGameSummary(gameManager.formatErrorMessage(player.getNicknameToken() + " invalid output!"));
                 player.deactivate(player.getNicknameToken() + " invalid output!");
                 player.setScore(-1);
-                endGame();
             }
+        }
+
+        // Get fresh list of active players after eliminations
+        activePlayers = gameManager.getActivePlayers();
+
+        // End game if fewer than 2 players remain
+        if (activePlayers.size() < 2) {
+            endGame();
+            return;
         }
 
         for (Player player : activePlayers) {
