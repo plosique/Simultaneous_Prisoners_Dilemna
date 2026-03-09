@@ -11,7 +11,7 @@ public class SkeletonMain {
         gameRunner.addAgent(Grudger.class, "Grudger");
         gameRunner.addAgent(Pavlov.class, "Pavlov");
         gameRunner.addAgent(TitForTwoTats.class, "TitForTwoTats");
-        gameRunner.addAgent(SuspiciousTitForTat.class, "SuspiciousTitForTat");
+        gameRunner.addAgent("python3 config/Boss.py3", "Boss");
 
         gameRunner.start();
     }

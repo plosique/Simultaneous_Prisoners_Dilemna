@@ -3,7 +3,6 @@ import java.util.*;
 public class AlwaysCooperate {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int myId = Integer.parseInt(scanner.nextLine());
         int initialOpponentCount = Integer.parseInt(scanner.nextLine());
 
         while (true) {
@@ -14,7 +13,7 @@ public class AlwaysCooperate {
                 opponentIds.add(Integer.parseInt(parts[0]));
             }
             for (int id : opponentIds) {
-                System.out.println(id);
+                System.out.println(id + " C");
             }
         }
     }

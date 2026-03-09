@@ -29,7 +29,12 @@ public class Player extends AbstractMultiplayerPlayer {
         // Each player outputs one line per active opponent
         return activeOpponentCount;
     }
-    public Action getActions(Player player, List<Player> activePlayers) throws InvalidAction, TimeoutException {
+    /**
+     * @param player the player whose output to parse
+     * @param activePlayers list of currently active players
+     * @param virtualToInternalMap mapping from virtual IDs (as seen by this player) to internal IDs
+     */
+    public Action getActions(Player player, List<Player> activePlayers, Map<Integer, Integer> virtualToInternalMap) throws InvalidAction, TimeoutException {
             List<String> outputs;
             try {
                 outputs = player.getOutputs();
@@ -38,12 +43,19 @@ public class Player extends AbstractMultiplayerPlayer {
             }
 
             int expectedOutputLines = activePlayers.size() - 1;
-            int playerId = player.getIndex();
 
-            Set<Integer> activePlayerIds = new HashSet<>();
-
-            for(Player activePlayer: activePlayers){
-                activePlayerIds.add(activePlayer.getIndex());
+            // Build set of valid virtual opponent IDs (1, 2, 3, ... excluding 0 which is self)
+            Set<Integer> validVirtualIds = new HashSet<>();
+            Set<Integer> activeInternalIds = new HashSet<>();
+            for (Player activePlayer : activePlayers) {
+                activeInternalIds.add(activePlayer.getIndex());
+            }
+            for (Map.Entry<Integer, Integer> entry : virtualToInternalMap.entrySet()) {
+                int virtualId = entry.getKey();
+                int internalId = entry.getValue();
+                if (virtualId != 0 && activeInternalIds.contains(internalId)) {
+                    validVirtualIds.add(virtualId);
+                }
             }
 
             // Check if we have the right number of output lines
@@ -52,10 +64,10 @@ public class Player extends AbstractMultiplayerPlayer {
                         expectedOutputLines, outputs.size()));
             }
 
-            Set<Integer> seenOpponents = new HashSet<>();
+            Set<Integer> seenVirtualOpponents = new HashSet<>();
             Map<Integer, Character> moves = new HashMap<>();
 
-            // Parse each output line: "opponent_id move"
+            // Parse each output line: "opponent_id move" (using virtual IDs)
             for (String line : outputs) {
                 String trimmedLine = line.trim();
 
@@ -71,31 +83,31 @@ public class Player extends AbstractMultiplayerPlayer {
                             trimmedLine));
                 }
 
-                int opponentId;
+                int virtualOpponentId;
                 try {
-                    opponentId = Integer.parseInt(tokens[0]);
+                    virtualOpponentId = Integer.parseInt(tokens[0]);
                 } catch (NumberFormatException e) {
                     throw new InvalidAction(String.format("Invalid player ID '%s' (not a number)",
                             tokens[0]));
                 }
 
-                // Check if opponent ID is self
-                if (opponentId == playerId) {
+                // Check if opponent ID is self (virtual ID 0)
+                if (virtualOpponentId == 0) {
                     throw new InvalidAction("Cannot play against yourself");
                 }
 
-                // Check if opponent ID is an active player
-                if (!activePlayerIds.contains(opponentId)) {
+                // Check if virtual opponent ID is valid
+                if (!validVirtualIds.contains(virtualOpponentId)) {
                     throw new InvalidAction(String.format("Invalid opponent ID %d",
-                            opponentId));
+                            virtualOpponentId));
                 }
 
                 // Check for duplicate opponent
-                if (seenOpponents.contains(opponentId)) {
+                if (seenVirtualOpponents.contains(virtualOpponentId)) {
                     throw new InvalidAction(String.format("Duplicate opponent ID %d",
-                            opponentId));
+                            virtualOpponentId));
                 }
-                seenOpponents.add(opponentId);
+                seenVirtualOpponents.add(virtualOpponentId);
 
                 // Validate move character
                 String moveStr = tokens[1];
@@ -104,7 +116,9 @@ public class Player extends AbstractMultiplayerPlayer {
                             moveStr));
                 }
 
-                moves.put(opponentId, moveStr.charAt(0));
+                // Translate virtual ID back to internal ID
+                int internalOpponentId = virtualToInternalMap.get(virtualOpponentId);
+                moves.put(internalOpponentId, moveStr.charAt(0));
             }
 
             Action action = new Action(player, moves);

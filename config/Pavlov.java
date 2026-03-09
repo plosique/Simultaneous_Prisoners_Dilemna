@@ -5,7 +5,6 @@ class Player {
         Scanner in = new Scanner(System.in);
         Map<Integer, Character> myLastMoves = new HashMap<>();
 
-        int myId = in.nextInt();
         int initialOpponentCount = in.nextInt();
 
         while (true) {

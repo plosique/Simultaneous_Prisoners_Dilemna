@@ -5,7 +5,6 @@ class Player {
         Scanner in = new Scanner(System.in);
         Random random = new Random();
 
-        int myId = in.nextInt();
         int initialOpponentCount = in.nextInt();
 
         while (true) {

@@ -4,7 +4,6 @@ class Player {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
 
-        int myId = in.nextInt();
         int initialOpponentCount = in.nextInt();
 
         while (true) {

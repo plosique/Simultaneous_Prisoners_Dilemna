@@ -7,7 +7,6 @@ import java.util.*;
 public class SuspiciousTitForTat {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int myId = Integer.parseInt(scanner.nextLine());
         int initialOpponentCount = Integer.parseInt(scanner.nextLine());
         boolean firstTurn = true;
 

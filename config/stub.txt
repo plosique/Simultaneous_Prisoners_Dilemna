@@ -1,9 +1,4 @@
 INPUT
-myId: your player ID
-OUTPUT
-
-read myId:int
-INPUT
 initialOpponentCount: initial number of opponents
 OUTPUT
 

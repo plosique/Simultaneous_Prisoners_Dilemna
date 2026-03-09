@@ -5,7 +5,6 @@ class Player {
         Scanner in = new Scanner(System.in);
         Set<Integer> betrayers = new HashSet<>();
 
-        int myId = in.nextInt();
         int initialOpponentCount = in.nextInt();
 
         while (true) {

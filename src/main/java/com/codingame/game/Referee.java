@@ -25,6 +25,12 @@ public class Referee extends AbstractReferee {
     private static final int MAX_TURNS = 60;
     private static final int INITIAL_MANA = 0;
 
+    // Per-player ID mapping: internalId -> (internalId -> virtualId)
+    // Each player sees themselves as 0, opponents as 1, 2, 3, ...
+    private Map<Integer, Map<Integer, Integer>> internalToVirtual;
+    // Reverse: internalId -> (virtualId -> internalId)
+    private Map<Integer, Map<Integer, Integer>> virtualToInternal;
+
     // Graph layout
     private static final int GRAPH_LEFT = 120;
     private static final int GRAPH_RIGHT = 1250;
@@ -55,10 +61,29 @@ public class Referee extends AbstractReferee {
         List<Player> players = gameManager.getActivePlayers();
         int opponentCount = players.size() - 1;
 
+        // Build per-player ID mappings
+        internalToVirtual = new HashMap<>();
+        virtualToInternal = new HashMap<>();
         for (Player player : players) {
             int playerId = player.getIndex();
+            Map<Integer, Integer> toVirtual = new HashMap<>();
+            Map<Integer, Integer> toInternal = new HashMap<>();
+            toVirtual.put(playerId, 0);
+            toInternal.put(0, playerId);
+            int nextVirtualId = 1;
+            for (Player opponent : players) {
+                if (opponent.getIndex() != playerId) {
+                    toVirtual.put(opponent.getIndex(), nextVirtualId);
+                    toInternal.put(nextVirtualId, opponent.getIndex());
+                    nextVirtualId++;
+                }
+            }
+            internalToVirtual.put(playerId, toVirtual);
+            virtualToInternal.put(playerId, toInternal);
+        }
+
+        for (Player player : players) {
             player.setActiveOpponentCount(opponentCount);
-            player.sendInputLine(String.valueOf(playerId));
             player.sendInputLine(String.valueOf(opponentCount));
             player.setScore(INITIAL_MANA);
         }
@@ -128,7 +153,7 @@ public class Referee extends AbstractReferee {
             graphicEntityModule.createText(String.valueOf(t))
                 .setX(x).setY(GRAPH_BOTTOM + 10)
                 .setAnchorX(0.5).setAnchorY(0)
-                .setFontSize(20).setFillColor(0xAAAAAA);
+                .setFontSize(34).setFillColor(0xAAAAAA);
 
             if (t > 0) {
                 graphicEntityModule.createLine()
@@ -148,7 +173,7 @@ public class Referee extends AbstractReferee {
             graphicEntityModule.createText(String.valueOf(score))
                 .setX(GRAPH_LEFT - 10).setY(y)
                 .setAnchorX(1).setAnchorY(0.5)
-                .setFontSize(20).setFillColor(0xAAAAAA);
+                .setFontSize(34).setFillColor(0xAAAAAA);
 
             graphicEntityModule.createLine()
                 .setX(GRAPH_LEFT).setY(y)
@@ -177,7 +202,7 @@ public class Referee extends AbstractReferee {
         graphicEntityModule.createText("Leaderboard")
             .setX(LB_LEFT).setY(LB_TOP - 60)
             .setAnchorX(0).setAnchorY(0)
-            .setFontSize(32)
+            .setFontSize(50)
             .setFontWeight(Text.FontWeight.BOLD)
             .setFillColor(0xFFFFFF);
 
@@ -191,7 +216,7 @@ public class Referee extends AbstractReferee {
 
     private void createLeaderboardRow(Player player, int rowY) {
         Circle indicator = graphicEntityModule.createCircle()
-            .setX(LB_LEFT).setY(rowY + 20)
+            .setX(LB_LEFT).setY(rowY + 26)
             .setRadius(12)
             .setFillColor(player.getColorToken())
             .setLineWidth(0);
@@ -200,13 +225,13 @@ public class Referee extends AbstractReferee {
         Text nameText = graphicEntityModule.createText(player.getNicknameToken())
             .setX(LB_LEFT + 25).setY(rowY + 5)
             .setAnchorX(0).setAnchorY(0)
-            .setFontSize(26).setFillColor(0xFFFFFF);
+            .setFontSize(42).setFillColor(0xFFFFFF);
         lbNameTexts.put(player.getIndex(), nameText);
 
         Text scoreText = graphicEntityModule.createText(String.valueOf(player.getScore()))
             .setX(LB_LEFT + 25).setY(rowY + 38)
             .setAnchorX(0).setAnchorY(0)
-            .setFontSize(22).setFillColor(0xBBBBBB);
+            .setFontSize(36).setFillColor(0xBBBBBB);
         lbScoreTexts.put(player.getIndex(), scoreText);
     }
 
@@ -260,6 +285,7 @@ public class Referee extends AbstractReferee {
         int opponentCount = activePlayers.size() - 1;
         for (Player player : activePlayers) {
             int playerId = player.getIndex();
+            Map<Integer, Integer> toVirtual = internalToVirtual.get(playerId);
 
             player.setActiveOpponentCount(opponentCount);
             player.sendInputLine(String.valueOf(opponentCount));
@@ -267,12 +293,14 @@ public class Referee extends AbstractReferee {
             if (!previousMoves.isEmpty() && previousMoves.containsKey(playerId)) {
                 Map<Integer, Character> movesAgainstMe = previousMoves.get(playerId);
                 for (Map.Entry<Integer, Character> entry : movesAgainstMe.entrySet()) {
-                    player.sendInputLine(entry.getKey() + " " + entry.getValue());
+                    int virtualOpponentId = toVirtual.get(entry.getKey());
+                    player.sendInputLine(virtualOpponentId + " " + entry.getValue());
                 }
             } else {
                 for (Player opponent : activePlayers) {
                     if (opponent.getIndex() != playerId) {
-                        player.sendInputLine(opponent.getIndex() + " N");
+                        int virtualOpponentId = toVirtual.get(opponent.getIndex());
+                        player.sendInputLine(virtualOpponentId + " N");
                     }
                 }
             }
@@ -283,11 +311,11 @@ public class Referee extends AbstractReferee {
 
         for (Player player : activePlayers) {
             try {
-                Action action = player.getActions(player, activePlayers);
+                Action action = player.getActions(player, activePlayers, virtualToInternal.get(player.getIndex()));
                 currentMoves.put(player.getIndex(), action.moves);
-                String summary = String.format("%s (id %d) played ", player.getNicknameToken(), player.getIndex());
+                String summary = String.format("%s played: ", player.getNicknameToken());
                 for (Map.Entry<Integer, Character> move : action.moves.entrySet()) {
-                    summary += move.getKey() + " " + move.getValue() + " ";
+                    summary += move.getValue() + " ";
                 }
                 gameManager.addToGameSummary(summary);
             } catch (TimeoutException e) {
@@ -306,6 +334,9 @@ public class Referee extends AbstractReferee {
 
         // End game if fewer than 2 players remain
         if (activePlayers.size() < 2) {
+            // Update leaderboard to show final scores before ending
+            List<Player> allPlayers = gameManager.getPlayers();
+            updateLeaderboard(allPlayers);
             endGame();
             return;
         }
@@ -353,8 +384,8 @@ public class Referee extends AbstractReferee {
         previousMoves = movesReceivedByPlayer;
 
         for (Player player : activePlayers) {
-            gameManager.addToGameSummary(String.format("%s (id %d) has %d mana",
-                player.getNicknameToken(), player.getIndex(), player.getScore()));
+            gameManager.addToGameSummary(String.format("%s has %d points",
+                player.getNicknameToken(), player.getScore()));
         }
 
         step_draw(turn);
@@ -394,14 +425,12 @@ public class Referee extends AbstractReferee {
     }
 
     private void generateEndScreen(List<Player> players) {
-        List<Player> sortedPlayers = new ArrayList<>(players);
-        sortedPlayers.sort((p1, p2) -> Integer.compare(p2.getScore(), p1.getScore()));
+        List<Player> allPlayers = gameManager.getPlayers();
+        int[] scores = new int[allPlayers.size()];
+        String[] displayedText = new String[allPlayers.size()];
 
-        int[] scores = new int[sortedPlayers.size()];
-        String[] displayedText = new String[sortedPlayers.size()];
-
-        for (int i = 0; i < sortedPlayers.size(); i++) {
-            Player player = sortedPlayers.get(i);
+        for (int i = 0; i < allPlayers.size(); i++) {
+            Player player = allPlayers.get(i);
             scores[i] = player.getScore();
             displayedText[i] = player.getScore() + " points";
         }

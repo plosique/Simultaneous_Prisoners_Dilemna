@@ -7,7 +7,6 @@ import java.util.*;
 public class TitForTwoTats {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int myId = Integer.parseInt(scanner.nextLine());
         int initialOpponentCount = Integer.parseInt(scanner.nextLine());
         Map<Integer, Character> prevOpponentMoves = new HashMap<>();
 

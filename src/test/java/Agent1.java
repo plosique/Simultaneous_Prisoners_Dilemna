@@ -9,8 +9,7 @@ import java.util.Scanner;
 public class Agent1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // Initialization: Read player ID and initial opponent count
-        int myId = Integer.parseInt(scanner.nextLine());
+        // Initialization: Read initial opponent count
         int initialOpponentCount = Integer.parseInt(scanner.nextLine());
         // Game loop
         while (true) {

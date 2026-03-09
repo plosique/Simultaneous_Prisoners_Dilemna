@@ -3,7 +3,6 @@ import java.util.*;
 public class Grudger {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int myId = Integer.parseInt(scanner.nextLine());
         int initialOpponentCount = Integer.parseInt(scanner.nextLine());
         Set<Integer> betrayers = new HashSet<>();
 

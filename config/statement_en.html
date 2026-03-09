@@ -2,122 +2,108 @@
 <div class="statement-body">
   <!-- GOAL -->
   <div class="statement-section statement-goal">
-    <h1>
+    <h2>
       <span class="icon icon-goal">&nbsp;</span>
       <span>The Goal</span>
-    </h1>
+    </h2>
     <div class="statement-goal-content">
-      Score the most points by defecting or cooperating in matches of up to 8 people. This is an implementation of 
-      <a href="Axelrod"> Axelrods tournaments</a>. 
+      Score the most points by cooperating or defecting in a multiplayer Iterated Prisoner's Dilemma tournament inspired by <a href="https://en.wikipedia.org/wiki/The_Evolution_of_Cooperation" target="_blank">Axelrod's tournaments</a>. Read <a href="https://www.lesswrong.com/posts/hamma4XgeNrsvAJv5/prisoner-s-dilemma-tournament-results" target="_blank">here</a> for inspiration on strategies.
       <br><br>
-      Each round occurs independently. Each round you must decide whether to 
-      <strong>cooperate (C)</strong> or <strong>defect (D)</strong> against each active opponent. 
-      The pairwise interaction is scored and added to your current score. 
-      Outside of the first turn you will see how opponents treated you last round (whether they cooperated or defected against you) for reference.
-      </div>
+      The default bots randomly select from a set of classic strategies: <strong>Always Cooperate</strong>, <strong>Always Defect</strong>, <strong>Tit for Tat</strong>, <strong>Suspicious Tit for Tat</strong>, <strong>Tit for Two Tats</strong>, <strong>Random</strong>, <strong>Grudger</strong>, and <strong>Pavlov</strong>.
+    </div>
   </div>
   <!-- RULES -->
   <div class="statement-section statement-rules">
-    <h1>
+    <h2>
       <span class="icon icon-rules">&nbsp;</span>
       <span>Rules</span>
-    </h1>
+    </h2>
     <div>
       <div class="statement-rules-content">
-        <strong>Game Setup:</strong>
+        <p>Each game lasts <strong>60 rounds</strong> with <strong>2 to 8 players</strong> competing simultaneously.</p>
+        <p>Every round is independent. You will receive your opponent's choices last round as input for reference. For output. you choose to <strong>cooperate (C)</strong> or <strong>defect (D)</strong> against each active opponent. Your choices and your opponents' choices determine the points awarded.</p>
+
+        <p><strong>Scoring per pairwise interaction:</strong></p>
         <ul>
-          <li>The game is played over <strong>60 turns</strong></li>
-          <li>Multiple players compete simultaneously</li>
+          <li><strong>Both cooperate (C vs C):</strong> 4 points each</li>
+          <li><strong>Both defect (D vs D):</strong> 1 point each</li>
+          <li><strong>Defector vs Cooperator (D vs C):</strong> 7 points for defector, 0 points for cooperator</li>
         </ul>
-        <br>
-        <strong>Scoring (per pairwise interaction):</strong>
+        <p>Your score each round is the <strong>sum of all pairwise payoffs</strong> against active opponents.</p>
+
+        <p>You can download the source code of this game on <a href="https://github.com/plosique/Simultaneous_Prisoners_Dilemna" target="_blank">GitHub</a>.
+      </div>
+    </div>
+  </div>
+  <!-- Victory conditions -->
+  <div class="statement-victory-conditions">
+    <div class="icon victory"></div>
+    <div class="blk">
+      <div class="title">Victory Conditions</div>
+      <div class="text">
         <ul>
-          <li><strong>Both cooperate (<const>C</const> vs <const>C</const>):</strong> 4 points each</li>
-          <li><strong>Both defect (<const>D</const> vs <const>D</const>):</strong> 1 point each</li>
-          <li><strong>Defector vs Cooperator (<const>D</const> vs <const>C</const>):</strong> 7 points for defector, 0 points for cooperator</li>
+          <li>If at any point only one player remains active, that player wins and the game ends immediately.</li>
+          <li>After 60 rounds, the player with the <strong>highest total score</strong> wins</li>
         </ul>
-        Your score per turn is the sum of payoffs against all active opponents. 
-        <br><br>
-        <strong>Defeat conditions:</strong><br>
-        You are <strong>eliminated</strong> if you:
+      </div>
+    </div>
+  </div>
+
+  <!-- Lose conditions -->
+  <div class="statement-lose-conditions">
+    <div class="icon lose"></div>
+    <div class="blk">
+      <div class="title">Defeat Conditions</div>
+      <div class="text">
+        You lose if:
         <ul>
-          <li>Output the wrong number of lines (must equal number of active opponents)</li>
-          <li>Use invalid format (each line must be "opponent_id move")</li>
+          <li>Your total score is lower than your opponents' after 60 rounds</li>
+        </ul>
+        <p>You are eliminated if you:</p>
+        <ul>
+          <li>Output the wrong number of lines</li>
+          <li>Use invalid output format</li>
           <li>Reference yourself, non-existent, or eliminated players</li>
           <li>Include duplicate opponent IDs</li>
-          <li>Use invalid moves (anything other than <const>C</const> or <const>D</const>)</li>
+          <li>Use invalid moves (only <const>C</const> or <const>D</const> allowed)</li>
           <li>Timeout</li>
         </ul>
-        Eliminated players no longer participate and are removed from opponent lists.
+        <p>Eliminated players are removed from all opponent lists.</p>
       </div>
     </div>
   </div>
-  <!-- EXAMPLES -->
+
+  <!-- GAME INPUT/OUTPUT -->
   <div class="statement-section statement-protocol">
-    <h1>
-      <span class="icon icon-example">&nbsp;</span>
-      <span>Example</span>
-    </h1>
-
-    <div class="statement-examples-text">
-      <strong> Initial Input: </strong>
-      <pre><const>0 2</const></pre>
-       <p>
-      <strong>Turn 1 Input (3 players total):</strong>
-      </p>
-      <pre>
-<const>1 N</const>
-<const>2 N</const></pre>
-      You are Player 0. Players 1 and 2 have no previous moves (first turn).
-      <br><br>
-      <strong>Turn 1 Output:</strong>
-      <pre><const>1 C</const>
-<const>2 C</const></pre>
-      You cooperate with both opponents.
-      <br><br>
-      <strong>Turn 2 Input:</strong>
-      <pre><const>2</const>
-<const>1 C</const>
-<const>2 D</const></pre>
-      Player 1 cooperated with you, Player 2 defected.
-      <br><br>
-      <strong>Scoring:</strong> If you played <const>C</const> against both, you earned 4 points (vs Player 1) + 0 points (vs Player 2) = 4 points that turn.
-    </div>
-
-  </div>
-    <!-- Protocol block -->
-    <div class="blk">
-      <div class="title">Initialization Input</div>
-      <div class="text">
-        <p><span class="statement-lineno">Line 1: </span><var>myId</var>, your player ID (integer)</p>
-        <p><span class="statement-lineno">Line 2: </span><var>initialOpponentCount</var>, the initial number of opponents (integer)</p>
-      </div>
-    </div>
+    <h2>
+      <span class="icon icon-protocol">&nbsp;</span>
+      <span>Game Input/Output</span>
+    </h2>
 
     <!-- Protocol block -->
     <div class="blk">
-      <div class="title">Input for One Game Turn</div>
+      <div class="title">Initialization input</div>
       <div class="text">
-        <p><span class="statement-lineno">Line 1: </span><var>opponentCount</var>, number of active opponents this turn (integer)</p>
-        <p><span class="statement-lineno">Next <var>opponentCount</var> lines: </span>Two space-separated values:
-          <ul>
-            <li><var>opponentId</var>: the opponent's ID (integer)</li>
-            <li><var>move</var>: their previous move against you - <const>'C'</const> (cooperate), <const>'D'</const> (defect), or <const>'N'</const> (no previous move on first turn)</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-
-    <!-- Protocol block -->
-    <div class="blk">
-      <div class="title">Output for One Game Turn</div>
-      <div class="text">
-        <span class="statement-lineno"><var>opponentCount</var> lines</span>, one per active opponent, each containing two space-separated values:
-        <ul>
-          <li><var>opponentId</var>: the opponent's ID</li>
-          <li><var>move</var>: your move against them - <const>C</const> (cooperate) or <const>D</const> (defect)</li>
-        </ul>
+        <span class="statement-lineno">Line 1:</span> integer <var>initialOpponentCount</var>, the initial number of opponents.<br>
         <br>
+        <strong>Note:</strong> Your player ID is always <const>0</const>. Opponents are numbered <const>1</const>, <const>2</const>, <const>3</const>, etc.
+      </div>
+    </div>
+
+    <!-- Protocol block -->
+    <div class="blk">
+      <div class="title">Input for one game turn</div>
+      <div class="text">
+        <span class="statement-lineno">Line 1:</span> integer <var>opponentCount</var>, the number of active opponents this turn.<br>
+        <span class="statement-lineno">Next <var>opponentCount</var> lines:</span> two space-separated values <var>opponentId</var> (integer) and <var>move</var> (character), where <var>opponentId</var> is the opponent's ID and <var>move</var> is their previous move against you (<const>C</const> for cooperate, <const>D</const> for defect, or <const>N</const> for no previous move on first turn).
+      </div>
+    </div>
+
+    <!-- Protocol block -->
+    <div class="blk">
+      <div class="title">Output for one game turn</div>
+      <div class="text">
+        <span class="statement-lineno"><var>opponentCount</var> lines:</span> two space-separated values <var>opponentId</var> <var>move</var>, where <var>opponentId</var> (integer) is the opponent's ID and <var>move</var> (character) is your move against them (<const>C</const> for cooperate or <const>D</const> for defect).
       </div>
     </div>
 
@@ -125,11 +111,10 @@
     <div class="blk">
       <div class="title">Constraints</div>
       <div class="text">
-        2 ≤ <var>players</var> ≤ 8<br>
-        <var>maximum number of turns</var> = 60<br>
-        Allotted response time per turn is ≤ <const>100</const> milliseconds.
+        2 to 8 players per game<br>
+        60 rounds maximum<br>
+        Response time per turn ≤ 100ms
       </div>
     </div>
-  </div>
   </div>
 </div>
