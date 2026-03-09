@@ -268,7 +268,7 @@ public class Referee extends AbstractReferee {
             Player player = sorted.get(i);
             int rowY = LB_TOP + i * LB_ROW_HEIGHT;
 
-            lbIndicators.get(player.getIndex()).setY(rowY + 20);
+            lbIndicators.get(player.getIndex()).setY(rowY + 32);
             lbNameTexts.get(player.getIndex()).setY(rowY + 5);
             lbScoreTexts.get(player.getIndex())
                 .setY(rowY + 38)
