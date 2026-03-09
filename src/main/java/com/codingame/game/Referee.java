@@ -216,7 +216,7 @@ public class Referee extends AbstractReferee {
 
     private void createLeaderboardRow(Player player, int rowY) {
         Circle indicator = graphicEntityModule.createCircle()
-            .setX(LB_LEFT).setY(rowY + 26)
+            .setX(LB_LEFT).setY(rowY + 32)
             .setRadius(12)
             .setFillColor(player.getColorToken())
             .setLineWidth(0);
